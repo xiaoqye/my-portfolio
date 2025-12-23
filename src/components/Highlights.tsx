@@ -24,7 +24,7 @@ const items = [
   },
   {
     key: "networking",
-    img: "/highlights/networking event.jpg",
+    img: "/highlights/Networking event.jpg",
     text: "Active participation in networking events — building professional relationships.",
   },
   {
