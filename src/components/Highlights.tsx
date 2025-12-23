@@ -18,11 +18,6 @@ const items = [
     text: "Student ambassador experience — supporting community engagement and welcoming new members.",
   },
   {
-    key: "ra",
-    img: "/highlights/My RA Event- Chinese New Year.jpg",
-    text: "Organized and support a Chinese New Year community event — teamwork and execution.",
-  },
-  {
     key: "networking",
     img: "/highlights/Networking event.jpg",
     text: "Active participation in networking events — building professional relationships.",
@@ -31,6 +26,11 @@ const items = [
     key: "usher",
     img: "/highlights/Usher.jpg",
     text: "Two years as an usher — strong customer service mindset, fast response, and handling real-time needs.",
+  },
+  {
+    key: "ra",
+    img: "/highlights/My RA Event- Chinese New Year.jpg",
+    text: "Organized a Chinese New Year community event — Community Building, leadership and teamwork.",
   },
   {
     key: "climbing",
