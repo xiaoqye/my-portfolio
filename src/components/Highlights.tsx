@@ -49,16 +49,20 @@ const items = [
   },
 ];
 
+type Item = typeof items[0];
+
 export default function Highlights() {
-  const [selectedItem, setSelectedItem] = useState(null);
+  const [selectedItem, setSelectedItem] = useState<Item | null>(null);
   
   const goToNext = () => {
+    if (!selectedItem) return;
     const currentIndex = items.findIndex(item => item.key === selectedItem.key);
     const nextIndex = (currentIndex + 1) % items.length;
     setSelectedItem(items[nextIndex]);
   };
-  
+
   const goToPrevious = () => {
+    if (!selectedItem) return;
     const currentIndex = items.findIndex(item => item.key === selectedItem.key);
     const prevIndex = (currentIndex - 1 + items.length) % items.length;
     setSelectedItem(items[prevIndex]);
