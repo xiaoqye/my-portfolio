@@ -4,47 +4,47 @@ import { useState } from "react";
 const items = [
   {
     key: "intern",
-    img: "/highlights/Intern presentation.JPG",
+    img: "/highlights/Intern presentation.jpg",
     text: "Internship presentation experience — communicating results clearly to stakeholders.",
   },
   {
     key: "msba",
-    img: "/highlights/MSBA.JPG",
+    img: "/highlights/MSBA.jpg",
     text: "MS in Business Analytics--Toolbox Class, hands-on work with Python, SQL, Tableau, and analytics projects.",
   },
   {
     key: "ambassador",
-    img: "/highlights/Ambassador.JPG",
+    img: "/highlights/Ambassador.jpg",
     text: "Student ambassador experience — supporting community engagement and welcoming new members.",
   },
   {
     key: "ra",
-    img: "/highlights/My RA Event- Chinese New Year.JPG",
+    img: "/highlights/My RA Event- Chinese New Year.jpg",
     text: "Organized and support a Chinese New Year community event — teamwork and execution.",
   },
   {
     key: "networking",
-    img: "/highlights/networking event.JPG",
+    img: "/highlights/networking event.jpg",
     text: "Active participation in networking events — building professional relationships.",
   },
   {
     key: "usher",
-    img: "/highlights/Usher.JPG",
+    img: "/highlights/Usher.jpg",
     text: "Two years as an usher — strong customer service mindset, fast response, and handling real-time needs.",
   },
   {
     key: "climbing",
-    img: "/highlights/Climbing.JPG",
+    img: "/highlights/Climbing.jpg",
     text: "Climbing builds focus, problem-solving skills, and resilience under pressure.",
   },
   {
     key: "dog",
-    img: "/highlights/My dog.JPG",
+    img: "/highlights/My dog.jpg",
     text: "Caring for my dog teaches responsibility, patience, and consistency.",
   },
   {
     key: "food",
-    img: "/highlights/Hotpot-foodie.JPG",
+    img: "/highlights/Hotpot-foodie.jpg",
     text: "Food lover — exploring cuisines is my favorite way to recharge.",
   },
 ];
