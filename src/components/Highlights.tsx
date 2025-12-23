@@ -38,11 +38,6 @@ const items = [
     text: "Climbing builds focus, problem-solving skills, and resilience under pressure.",
   },
   {
-    key: "dog",
-    img: "/highlights/My dog.jpg",
-    text: "Caring for my dog teaches responsibility, patience, and consistency.",
-  },
-  {
     key: "food",
     img: "/highlights/Hotpot-foodie.jpg",
     text: "Food lover — exploring cuisines is my favorite way to recharge.",
