@@ -10,7 +10,7 @@ const items = [
   {
     key: "msba",
     img: "/highlights/MSBA.jpg",
-    text: "MS in Business Analytics--Toolbox Class, hands-on work with Python, SQL, Tableau, and analytics projects.",
+    text: "Business Analytics Toolbox course featuring a guest speaker, and a robot dog demonstration.",
   },
   {
     key: "ambassador",
@@ -30,7 +30,7 @@ const items = [
   {
     key: "ra",
     img: "/highlights/My RA Event- Chinese New Year.jpg",
-    text: "Organized a Chinese New Year community event — Community Building, leadership and teamwork.",
+    text: "Organized a Chinese New Year community event — community building, leadership and teamwork.",
   },
   {
     key: "climbing",
