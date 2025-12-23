@@ -24,7 +24,7 @@ const items = [
   },
   {
     key: "usher",
-    img: "/highlights/Usher.jpg",
+    img: "/highlights/usher.jpg",
     text: "Two years as an usher — strong customer service mindset, fast response, and handling real-time needs.",
   },
   {
