@@ -1,5 +1,17 @@
-// data/projects.ts
-export const projects = [
+export interface Project {
+  slug: string;
+  title: string;
+  category: string;
+  cover: string;
+  summary: string;
+  links: {
+    dashboard?: string;
+    report?: string;
+    github?: string;
+  };
+}
+
+export const projects: Project[] = [
   {
     slug: "ev-dashboard",
     title: "EV Market Dashboard",
