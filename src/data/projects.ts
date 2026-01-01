@@ -58,7 +58,7 @@ export const projects: Project[] = [
   {
     slug: "financial-analysis-pepsi-coke",
     title: "Financial Analysis: PepsiCo vs Coca-Cola",
-    category: "Financial Analysis (MBA)",
+    category: "Financial Analysis",
     cover: "/covers/fr.png",
     summary:
       "Conducted comparative financial analysis of PepsiCo and Coca-Cola, focusing on profitability, liquidity, solvency, and value creation.",
