@@ -21,7 +21,7 @@ export const projects: Project[] = [
   // --------------------
   {
     slug: "ev-dashboard",
-    title: "EV Market Dashboard",
+    title: "Electric Vehicle Market Analysis",
     section: "Analytics & Decision Support",
     category: "Data Visualization",
     cover: "/covers/vehicle.png",
@@ -47,9 +47,9 @@ export const projects: Project[] = [
   },
   {
     slug: "sql-analysis",
-    title: "SQL Bluebike Analysis",
+    title: "Bluebike Usage Analysis",
     section: "Analytics & Decision Support",
-    category: "SQL",
+    category: "SQL & Looker",
     cover: "/covers/sql.png",
     summary:
       "Used SQL to analyze Bluebikes trip data, generating insights on usage patterns and operational performance.",
@@ -61,7 +61,7 @@ export const projects: Project[] = [
     slug: "la-crime-unemployment",
     title: "LA Crime & Unemployment Analysis",
     section: "Analytics & Decision Support",
-    category: "Python / Analytics",
+    category: "Python",
     cover: "/covers/crime.png",
     summary:
       "Analyzed the relationship between unemployment and crime trends in Los Angeles using Python to assess economic and social impact.",
@@ -73,7 +73,7 @@ export const projects: Project[] = [
     slug: "smart-city-logistics",
     title: "Smart City Logistics Platform",
     section: "Analytics & Decision Support",
-    category: "Logistics / Decision Analytics",
+    category: "Big Data Platform Design",
     cover: "/covers/logistics.png",
     summary:
       "Designed a data-driven logistics platform concept integrating multi-source data to identify bottlenecks, compare scenarios, and support city-wide operational decisions.",
@@ -85,7 +85,7 @@ export const projects: Project[] = [
   // --------------------
   {
     slug: "financial-analysis-pepsi-coke",
-    title: "Financial Analysis: PepsiCo vs Coca-Cola",
+    title: "PepsiCo vs Coca-Cola: Financial Performance Analysis",
     section: "Financial Performance & Reporting",
     category: "Financial Analysis",
     cover: "/covers/fr.png",
@@ -98,9 +98,9 @@ export const projects: Project[] = [
   },
   {
     slug: "powerbi-vehicle-sales",
-    title: "Vehicle Sales Dashboard (Power BI)",
+    title: "Automotive Sales & Pricing Dashboard",
     section: "Financial Performance & Reporting",
-    category: "Power BI / Reporting",
+    category: "Power BI",
     cover: "/covers/powerbi.png",
     summary:
       "Built a Power BI dashboard to track vehicle sales performance, key financial KPIs, and trends for executive reporting.",

@@ -67,7 +67,7 @@ export default function Home() {
               {/* selfie */}
               <div className="mx-auto relative h-36 w-36 overflow-hidden rounded-full bg-gray-100">
                 <Image
-                  src="/quency.png"
+                  src="/quency.jpg"
                   alt="Quency Ye"
                   fill
                   className="object-cover"
