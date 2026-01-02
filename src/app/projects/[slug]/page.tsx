@@ -8,12 +8,12 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function ProjectPage({
+export default async function ProjectPage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const { slug } = params;
+  const { slug } = await params;
   const project = projects.find((p) => p.slug === slug);
 
   if (!project) {
