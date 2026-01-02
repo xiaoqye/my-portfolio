@@ -123,7 +123,7 @@ export const projects: Project[] = [
   // Product Development
   // --------------------
   {
-    slug: "Portfolio Website",
+    slug: "portfolio-website",
     title: "Personal Portfolio Website",
     section: "Product Development",
     category: "Product Design & Front-End Development",
