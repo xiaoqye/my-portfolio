@@ -122,24 +122,23 @@ export default function Home() {
               </div>
             </div>
           </aside>
+             {/* intro */}
+            <div className="inline-block border border-gray-400 px-4 py-3 mb-10">
+              <p className="text-sm font-medium text-gray-900">
+                 Welcome to my website! I’m glad you’re here!
+              </p>
 
-          {/* RIGHT — scrollable */}
-          <section className="h-full overflow-y-auto py-10 pb-24 pl-6">
-            {/* intro */}
-            <div className="max-w-xs aspect-square rounded-xl border border-gray-900 p-6 flex flex-col justify-center ml-auto">
-              <p className="font-medium">Welcome — I’m glad you’re here!</p>
-              <p className="mt-4 text-gray-700">
-                I enjoy using data, platforms, and practical implementation to
-                solve real business problems.
+              <p className="mt-2 text-sm text-gray-700">
+              I enjoy using data, platforms, and practical implementation to solve real business problems.
+             I’m excited to keep growing while creating real impact in my work.
               </p>
-              <p className="mt-2 text-gray-700">
-                I’m excited to keep growing while creating real impact in my
-                work.
+
+              <p className="mt-2 text-xs text-gray-500 tracking-wide">
+              Business Analytics • Product Management • Customer Success
               </p>
-              <p className="mt-4 text-sm text-gray-500">
-                Business Analytics • Product Management • Customer Success
-              </p>
-            </div>
+              </div>
+
+
 
             {/* PROJECTS */}
             <h1 className="mt-16 text-2xl font-semibold tracking-tight">
