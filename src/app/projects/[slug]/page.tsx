@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { projects } from "@/data/projects";
 import { notFound } from "next/navigation";
@@ -9,18 +8,12 @@ export async function generateStaticParams() {
   }));
 }
 
-// 👇 MAKE FUNCTION ASYNC
-export default async function ProjectPage({
+export default function ProjectPage({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: { slug: string };
 }) {
-  // 👇 UNWRAP PARAMS
-  const { slug } = await params;
-
-  console.log("URL slug:", slug);
-  console.log("Available slugs:", projects.map((p) => p.slug));
-
+  const { slug } = params;
   const project = projects.find((p) => p.slug === slug);
 
   if (!project) {
@@ -28,38 +21,71 @@ export default async function ProjectPage({
   }
 
   return (
-    <main className="mx-auto max-w-4xl p-6 pt-12">
+    <main className="mx-auto max-w-3xl p-6 pt-12">
+      {/* Back */}
       <Link
         href="/"
-        className="inline-flex items-center text-gray-600 hover:text-gray-900 mb-6"
+        className="inline-block mb-8 text-sm text-gray-600 hover:text-gray-900"
       >
         ← Back to home
       </Link>
 
-      <div className="mb-6">
+      {/* Header */}
+      <div className="mb-10">
         <div className="text-sm text-gray-500 mb-2">{project.category}</div>
-        <h1 className="text-4xl font-bold mb-4">{project.title}</h1>
-        <p className="text-lg text-gray-700">{project.summary}</p>
+        <h1 className="text-3xl font-semibold mb-4">{project.title}</h1>
+        <p className="text-gray-700">{project.summary}</p>
       </div>
 
-      <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden bg-gray-100 mb-8">
-        <Image
-          src={project.cover}
-          alt={project.title}
-          fill
-          className="object-cover"
-        />
-      </div>
+      {/* CONTENT SECTIONS */}
+      <div className="space-y-12">
 
-      <div className="space-y-4">
-        <h2 className="text-2xl font-semibold">Project Links</h2>
-        <div className="flex flex-wrap gap-3">
+        <section>
+          <h2 className="text-lg font-semibold mb-2">
+            Content
+          </h2>
+          <p className="whitespace-pre-line text-gray-700">
+            {project.content || ""}
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-lg font-semibold mb-2">
+            Here are the questions I was interested in answering:
+          </h2>
+          <p className="whitespace-pre-line text-gray-700">
+            {project.questions || ""}
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-lg font-semibold mb-2">
+            I took these steps to create my analysis:
+          </h2>
+          <p className="whitespace-pre-line text-gray-700">
+            {project.steps || ""}
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-lg font-semibold mb-2">
+            My key takeaways:
+          </h2>
+          <p className="whitespace-pre-line text-gray-700">
+            {project.takeaways || ""}
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-lg font-semibold mb-2">
+            Check out the project here:
+          </h2>
           {project.links.dashboard && (
             <a
               href={project.links.dashboard}
               target="_blank"
               rel="noreferrer"
-              className="rounded-xl border border-blue-500 bg-blue-50 px-6 py-3 text-sm font-medium text-blue-700 hover:bg-blue-100"
+              className="underline text-blue-600"
             >
               View Dashboard →
             </a>
@@ -69,7 +95,7 @@ export default async function ProjectPage({
               href={project.links.report}
               target="_blank"
               rel="noreferrer"
-              className="rounded-xl border border-green-500 bg-green-50 px-6 py-3 text-sm font-medium text-green-700 hover:bg-green-100"
+              className="underline text-green-600 ml-4"
             >
               View Report →
             </a>
@@ -79,14 +105,14 @@ export default async function ProjectPage({
               href={project.links.github}
               target="_blank"
               rel="noreferrer"
-              className="rounded-xl border border-gray-700 bg-gray-50 px-6 py-3 text-sm font-medium text-gray-700 hover:bg-gray-100"
+              className="underline text-gray-800 ml-4"
             >
               View GitHub →
             </a>
           )}
-        </div>
+        </section>
+
       </div>
     </main>
   );
 }
-
