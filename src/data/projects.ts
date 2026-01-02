@@ -9,6 +9,10 @@ export interface Project {
   category: string;
   cover: string;
   summary: string;
+   content?: string;
+  questions?: string;
+  steps?: string;
+  takeaways?: string;
   links: {
     dashboard?: string;
     report?: string;
@@ -21,18 +25,32 @@ export const projects: Project[] = [
   // Analytics & Decision Support
   // --------------------
   {
-    slug: "ev-dashboard",
-    title: "Electric Vehicle Market Analysis",
-    section: "Analytics & Decision Support",
-    category: "Data Visualization",
-    cover: "/covers/vehicle.png",
-    summary:
-      "Built an interactive dashboard analyzing EV pricing, sales, and charging behavior to support market and product decisions.",
-    links: {
-      dashboard:
-        "https://public.tableau.com/views/ElectricVehicleMarketAnalysis_17664609244120/Dashboard4?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
-    },
+  slug: "ev-dashboard",
+  title: "Electric Vehicle Market Analysis",
+  section: "Analytics & Decision Support",
+  category: "Data Visualization",
+  cover: "/covers/vehicle.png",
+  summary:
+    "Built an interactive dashboard analyzing EV pricing, sales, and charging behavior.",
+
+  // 👇 SIMPLE TEXT FIELDS (paste freely)
+  content:
+    "I explored the electric vehicle market to understand pricing patterns, sales performance, and charging characteristics across manufacturers.",
+
+  questions:
+    "How do EV prices vary across manufacturers?\nWhat factors are associated with higher EV sales?\nHow do charging time and battery range influence adoption?",
+
+  steps:
+    "Collected and cleaned EV sales and specification data.\nPerformed exploratory data analysis.\nBuilt an interactive Tableau dashboard.",
+
+  takeaways:
+    "Price and range strongly influence adoption.\nCharging time remains a key constraint.\nDashboards helped translate data into business insights.",
+
+  links: {
+    dashboard: "https://public.tableau.com/..."
   },
+},
+
   {
     slug: "loan-default-ml",
     title: "Loan Default Prediction",
@@ -41,7 +59,19 @@ export const projects: Project[] = [
     cover: "/covers/lending.png",
     summary:
       "Developed machine learning models to predict loan default risk and evaluate model performance for risk assessment.",
-    links: {
+    content:
+    "I explored ?.",
+
+  questions:
+    "How do EV prices s?\nHow do charging time and battery range influence adoption?",
+
+  steps:
+    "Collected and ta.\nPerformed exploratory data analysis.\nBuilt an interactive Tableau dashboard.",
+
+  takeaways:
+    "Price and range strey constraint.\nDashboards helped translate data into business insights.",
+
+      links: {
       report:
         "https://www.canva.com/design/DAG6UInwOoE/ymHDFTuXOnOfatSkU11aqg/edit?utm_content=DAG6UInwOoE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
     },
@@ -54,7 +84,19 @@ export const projects: Project[] = [
     cover: "/covers/sql.png",
     summary:
       "Used SQL to analyze Bluebikes trip data, generating insights on usage patterns and operational performance.",
-    links: {
+     content:
+    "I explored ?.",
+
+  questions:
+    "How do EV prices s?\nHow do charging time and battery range influence adoption?",
+
+  steps:
+    "Collected and ta.\nPerformed exploratory data analysis.\nBuilt an interactive Tableau dashboard.",
+
+  takeaways:
+    "Price and range strey constraint.\nDashboards helped translate data into business insights.",
+
+      links: {
       github: "https://github.com/xiaoqye/BA775_Toolbox_Bluebikes-Analysis",
     },
   },
@@ -67,7 +109,19 @@ export const projects: Project[] = [
     cover: "/covers/powerbi.png",
     summary:
       "Built a Power BI dashboard to track vehicle sales performance, key financial KPIs, and trends for executive reporting.",
-    links: {},
+     content:
+    "I explored ?.",
+
+  questions:
+    "How do EV prices s?\nHow do charging time and battery range influence adoption?",
+
+  steps:
+    "Collected and ta.\nPerformed exploratory data analysis.\nBuilt an interactive Tableau dashboard.",
+
+  takeaways:
+    "Price and range strey constraint.\nDashboards helped translate data into business insights.",
+
+      links: {},
   },
   {
     slug: "la-crime-unemployment",
@@ -77,7 +131,19 @@ export const projects: Project[] = [
     cover: "/covers/crime.png",
     summary:
       "Analyzed the relationship between unemployment and crime trends in Los Angeles using Python to assess economic and social impact.",
-    links: {
+  content:
+    "I explored ?.",
+
+  questions:
+    "How do EV prices s?\nHow do charging time and battery range influence adoption?",
+
+  steps:
+    "Collected and ta.\nPerformed exploratory data analysis.\nBuilt an interactive Tableau dashboard.",
+
+  takeaways:
+    "Price and range strey constraint.\nDashboards helped translate data into business insights.",
+
+      links: {
       github: "https://github.com/xiaoqye/BA780_A06_Crime-Unemployment-Analysis",
     },
   },
@@ -89,7 +155,20 @@ export const projects: Project[] = [
   cover: "/covers/marketing.png",
   summary:
     "Developed a data-driven marketing analytics plan to evaluate customer behavior, channel performance, and campaign effectiveness, translating insights into actionable recommendations.",
-  links: {},
+  
+   content:
+    "I explored ?.",
+
+  questions:
+    "How do EV prices s?\nHow do charging time and battery range influence adoption?",
+
+  steps:
+    "Collected and ta.\nPerformed exploratory data analysis.\nBuilt an interactive Tableau dashboard.",
+
+  takeaways:
+    "Price and range strey constraint.\nDashboards helped translate data into business insights.",
+
+    links: {},
 },
 
   // --------------------
@@ -103,7 +182,20 @@ export const projects: Project[] = [
     cover: "/covers/fr.png",
     summary:
       "Conducted comparative financial analysis of PepsiCo and Coca-Cola, focusing on profitability, liquidity, solvency, and value creation.",
-    links: {
+     content:
+    "I explored ?.",
+
+  questions:
+    "How do EV prices s?\nHow do charging time and battery range influence adoption?",
+
+  steps:
+    "Collected and ta.\nPerformed exploratory data analysis.\nBuilt an interactive Tableau dashboard.",
+
+  takeaways:
+    "Price and range strey constraint.\nDashboards helped translate data into business insights.",
+
+    
+      links: {
       report:
         "https://docs.google.com/presentation/d/1iXMofNZOu3AUj5AB1t2vztJJ8OCk6JCH63MsgCLz1C4/edit?usp=sharing",
     },
@@ -116,7 +208,20 @@ export const projects: Project[] = [
   cover: "/covers/real-estate.png",
   summary:
     "Conducted financial analysis of a real estate investment, evaluating cash flows, returns, and risk factors to support investment decision-making.",
-  links: {},
+   content:
+    "I explored ?.",
+
+  questions:
+    "How do EV prices s?\nHow do charging time and battery range influence adoption?",
+
+  steps:
+    "Collected and ta.\nPerformed exploratory data analysis.\nBuilt an interactive Tableau dashboard.",
+
+  takeaways:
+    "Price and range strey constraint.\nDashboards helped translate data into business insights.",
+
+  
+    links: {},
 },
 
 // --------------------
@@ -130,7 +235,19 @@ export const projects: Project[] = [
     cover: "/covers/portfolio.png",
     summary:
       "Designed and built a personal portfolio website to organize projects clearly, improve storytelling, and present work in a product format.",
-    links: {},
+     content:
+    "I explored ?.",
+
+  questions:
+    "How do EV prices s?\nHow do charging time and battery range influence adoption?",
+
+  steps:
+    "Collected and ta.\nPerformed exploratory data analysis.\nBuilt an interactive Tableau dashboard.",
+
+  takeaways:
+    "Price and range strey constraint.\nDashboards helped translate data into business insights.",
+
+      links: {},
   },
 
 {
@@ -141,7 +258,19 @@ export const projects: Project[] = [
     cover: "/covers/logistics.png",
     summary:
       "Designed a data-driven logistics platform concept integrating multi-source data to identify bottlenecks, compare scenarios, and support city-wide operational decisions.",
-    links: {},
+    content:
+    "I explored ?.",
+
+  questions:
+    "How do EV prices s?\nHow do charging time and battery range influence adoption?",
+
+  steps:
+    "Collected and ta.\nPerformed exploratory data analysis.\nBuilt an interactive Tableau dashboard.",
+
+  takeaways:
+    "Price and range strey constraint.\nDashboards helped translate data into business insights.",
+   
+      links: {},
   },
 
 
@@ -158,7 +287,19 @@ export const projects: Project[] = [
     cover: "/covers/warby.png",
     summary:
       "Conducted a strategic analysis of Warby Parker’s business model, competitive positioning, and growth opportunities with actionable recommendations.",
-    links: {},
+     content:
+    "I explored ?.",
+
+  questions:
+    "How do EV prices s?\nHow do charging time and battery range influence adoption?",
+
+  steps:
+    "Collected and ta.\nPerformed exploratory data analysis.\nBuilt an interactive Tableau dashboard.",
+
+  takeaways:
+    "Price and range strey constraint.\nDashboards helped translate data into business insights.",
+
+      links: {},
   },
   {
   slug: "cooperative-relationships-strategy",
@@ -168,7 +309,19 @@ export const projects: Project[] = [
   cover: "/covers/strategy.png",
   summary:
     "Analyzed cooperative relationships between firms, focusing on strategic partnerships, value creation, and competitive advantage within inter-organizational ecosystems.",
-  links: {},
+   content:
+    "I explored ?.",
+
+  questions:
+    "How do EV prices s?\nHow do charging time and battery range influence adoption?",
+
+  steps:
+    "Collected and ta.\nPerformed exploratory data analysis.\nBuilt an interactive Tableau dashboard.",
+
+  takeaways:
+    "Price and range strey constraint.\nDashboards helped translate data into business insights.",
+
+    links: {},
 },
 {
     slug: "digital-innovation-asset-renting",
@@ -178,7 +331,19 @@ export const projects: Project[] = [
     cover: "/covers/digital.png",
     summary:
       "Proposed platform-based digital solutions to improve asset renting efficiency by enhancing utilization, automation, and user experience.",
-    links: {
+     content:
+    "I explored ?.",
+
+  questions:
+    "How do EV prices s?\nHow do charging time and battery range influence adoption?",
+
+  steps:
+    "Collected and ta.\nPerformed exploratory data analysis.\nBuilt an interactive Tableau dashboard.",
+
+  takeaways:
+    "Price and range strey constraint.\nDashboards helped translate data into business insights.",
+
+      links: {
       report:
         "https://www.canva.com/design/DAGUcQlHdzM/TIv38YpSxTqmCz8-VAutrQ/edit?utm_content=DAGUcQlHdzM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
     },
