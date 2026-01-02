@@ -93,7 +93,7 @@ export const projects: Project[] = [
 },
 
   // --------------------
-  // Financial Performance & Reporting
+  // Financial Analysis & Investment
   // --------------------
   {
     slug: "financial-analysis-pepsi-coke",
