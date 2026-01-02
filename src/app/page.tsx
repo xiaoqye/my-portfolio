@@ -29,7 +29,7 @@ function ProjectItem({
   return (
     <Link
       href={`/projects/${slug}`}
-      className="flex items-center justify-between gap-4 rounded-xl px-3 py-4 hover:bg-gray-50 transition"
+      className="flex items-center justify-between gap-4 rounded-xl px-3 py-4 transition hover:bg-gray-50"
     >
       {/* text */}
       <div className="min-w-0">
@@ -37,7 +37,7 @@ function ProjectItem({
         <div className="mt-1 text-sm text-gray-500">{category}</div>
       </div>
 
-      {/* narrow image */}
+      {/* image */}
       <div className="relative h-16 w-24 flex-shrink-0 overflow-hidden rounded-lg bg-gray-100">
         <Image src={cover} alt={title} fill className="object-cover" />
       </div>
@@ -54,7 +54,7 @@ export default function Home() {
     (p) => p.section === "Financial Performance & Reporting"
   );
   const product = projects.filter(
-  (p) => p.section === "Product Development"
+    (p) => p.section === "Product Development"
   );
   const strategy = projects.filter(
     (p) => p.section === "Business Strategy & Innovation"
@@ -64,7 +64,8 @@ export default function Home() {
     <main className="h-screen overflow-hidden">
       <div className="mx-auto h-full max-w-6xl px-6">
         <div className="grid h-full grid-cols-1 gap-10 lg:grid-cols-[220px_1fr]">
-          {/* LEFT — fixed & vertically centered */}
+          
+          {/* LEFT — fixed */}
           <aside className="hidden lg:flex items-center">
             <div className="w-full text-center">
               {/* selfie */}
@@ -122,26 +123,12 @@ export default function Home() {
               </div>
             </div>
           </aside>
-             {/* intro */}
-            <div className="inline-block border border-gray-400 px-4 py-3 mb-10">
-              <p className="text-sm font-medium text-gray-900">
-                 Welcome to my website! I’m glad you’re here!
-              </p>
 
-              <p className="mt-2 text-sm text-gray-700">
-              I enjoy using data, platforms, and practical implementation to solve real business problems.
-             I’m excited to keep growing while creating real impact in my work.
-              </p>
-
-              <p className="mt-2 text-xs text-gray-500 tracking-wide">
-              Business Analytics • Product Management • Customer Success
-              </p>
-              </div>
-
-
-
+          {/* RIGHT — scrollable */}
+          <section className="h-full overflow-y-auto py-10 pb-24 pl-6">
+            
             {/* PROJECTS */}
-            <h1 className="mt-16 text-2xl font-semibold tracking-tight">
+            <h1 className="mt-12 text-2xl font-semibold tracking-tight">
               PROJECTS
             </h1>
 
@@ -172,19 +159,20 @@ export default function Home() {
                 />
               ))}
             </div>
-            {/* Product Development */}
+
+            {/* Product */}
             <Section title="Product Development" />
             <div className="mt-4 grid grid-cols-1 gap-2 sm:grid-cols-2">
               {product.map((p) => (
-                 <ProjectItem
-                    key={p.slug}
-                    slug={p.slug}
-                    title={p.title}
-                    category={p.category}
-                    cover={p.cover}
-                  />
-                ))}
-              </div>
+                <ProjectItem
+                  key={p.slug}
+                  slug={p.slug}
+                  title={p.title}
+                  category={p.category}
+                  cover={p.cover}
+                />
+              ))}
+            </div>
 
             {/* Strategy */}
             <Section title="Business Strategy & Innovation" />
@@ -204,6 +192,7 @@ export default function Home() {
             <div className="mt-20">
               <Highlights />
             </div>
+
           </section>
         </div>
       </div>
