@@ -32,8 +32,6 @@ export const projects: Project[] = [
   cover: "/covers/vehicle.png",
   summary:
     "Built an interactive dashboard analyzing EV pricing, sales, and charging behavior.",
-
-  // 👇 SIMPLE TEXT FIELDS (paste freely)
   content:
     "I explored the electric vehicle market to understand pricing patterns, sales performance, and charging characteristics across manufacturers.",
 
@@ -104,7 +102,7 @@ export const projects: Project[] = [
   {
     slug: "powerbi-vehicle-sales",
     title: "Automotive Sales & Pricing Dashboard",
-    section: "Financial Performance & Reporting",
+    section: "Analytics & Decision Support",
     category: "Power BI",
     cover: "/covers/powerbi.png",
     summary:
