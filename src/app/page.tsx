@@ -53,6 +53,9 @@ export default function Home() {
   const financial = projects.filter(
     (p) => p.section === "Financial Performance & Reporting"
   );
+  const product = projects.filter(
+  (p) => p.section === "Product Development"
+  );
   const strategy = projects.filter(
     (p) => p.section === "Business Strategy & Innovation"
   );
@@ -60,7 +63,7 @@ export default function Home() {
   return (
     <main className="h-screen overflow-hidden">
       <div className="mx-auto h-full max-w-6xl px-6">
-        <div className="grid h-full grid-cols-1 gap-10 lg:grid-cols-[260px_1fr]">
+        <div className="grid h-full grid-cols-1 gap-10 lg:grid-cols-[220px_1fr]">
           {/* LEFT — fixed & vertically centered */}
           <aside className="hidden lg:flex items-center">
             <div className="w-full text-center">
@@ -121,9 +124,9 @@ export default function Home() {
           </aside>
 
           {/* RIGHT — scrollable */}
-          <section className="h-full overflow-y-auto pt-16 pb-24">
+          <section className="h-full overflow-y-auto pt-16 pb-24 pl-6">
             {/* intro */}
-            <div className="max-w-3xl rounded-2xl border p-6">
+            <div className="max-w-md aspect-square rounded-2xl border p-6 flex flex-col justify-center">
               <p className="font-medium">Welcome — I’m glad you’re here!</p>
               <p className="mt-4 text-gray-700">
                 I enjoy using data, platforms, and practical implementation to
@@ -139,7 +142,7 @@ export default function Home() {
             </div>
 
             {/* PROJECTS */}
-            <h1 className="mt-16 text-3xl font-semibold tracking-tight">
+            <h1 className="mt-16 text-2xl font-semibold tracking-tight">
               PROJECTS
             </h1>
 
@@ -170,6 +173,19 @@ export default function Home() {
                 />
               ))}
             </div>
+            {/* Product Development */}
+            <Section title="Product Development" />
+            <div className="mt-4 grid grid-cols-1 gap-2 sm:grid-cols-2">
+              {product.map((p) => (
+                 <ProjectItem
+                    key={p.slug}
+                    slug={p.slug}
+                    title={p.title}
+                    category={p.category}
+                    cover={p.cover}
+                  />
+                ))}
+              </div>
 
             {/* Strategy */}
             <Section title="Business Strategy & Innovation" />
