@@ -124,9 +124,9 @@ export default function Home() {
           </aside>
 
           {/* RIGHT — scrollable */}
-          <section className="h-full overflow-y-auto pt-10 pb-24 pl-6">
+          <section className="h-full overflow-y-auto py-10 pb-24 pl-6">
             {/* intro */}
-            <div className="max-w-md aspect-square rounded-xl bg-gray-50 p-6 flex flex-col justify-center">
+            <div className="max-w-sm aspect-square rounded-xl bg-gray-50 p-6 flex flex-col justify-center">
               <p className="font-medium">Welcome — I’m glad you’re here!</p>
               <p className="mt-4 text-gray-700">
                 I enjoy using data, platforms, and practical implementation to
