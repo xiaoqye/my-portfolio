@@ -209,9 +209,6 @@ export const projects: Project[] = [
    content:
     "I explored ?.",
 
-  questions:
-    "How do EV prices s?\nHow do charging time and battery range influence adoption?",
-
   steps:
     "Collected and ta.\nPerformed exploratory data analysis.\nBuilt an interactive Tableau dashboard.",
 
