@@ -433,33 +433,33 @@ links: {
     title: "What We Analyzed",
     content:
       "• Profitability metrics including gross margin, operating margin, and net margin",
-    images: [{ src: "/financial-analysis-pepsi-coke/pepsi1.png" }],
+    images: [{ src: "/projects/financial-analysis-pepsi-coke/pepsi1.png" }],
   },
 
   {
     title: "",
     content: "• Value creation using ROE and DuPont analysis",
-    images: [{ src: "/financial-analysis-pepsi-coke/pepsi2.png" }],
+    images: [{ src: "/projects/financial-analysis-pepsi-coke/pepsi2.png" }],
   },
 
   {
     title: "",
     content:
       "• Liquidity and solvency through current ratio and debt-to-equity",
-    images: [{ src: "/financial-analysis-pepsi-coke/pepsi3.png" }],
+    images: [{ src: "/projects/financial-analysis-pepsi-coke/pepsi3.png" }],
   },
 
   {
     title: "",
     content: "• Asset productivity and earnings quality",
-    images: [{ src: "/financial-analysis-pepsi-coke/pepsi4.png" }],
+    images: [{ src: "/projects/financial-analysis-pepsi-coke/pepsi4.png" }],
   },
 
   {
     title: "",
     content:
       "• Cash flow patterns across operating, investing, and financing activities",
-    images: [{ src: "/financial-analysis-pepsi-coke/pepsi5.png" }],
+    images: [{ src: "/projects/financial-analysis-pepsi-coke/pepsi5.png" }],
   },
 
     {
@@ -503,7 +503,7 @@ links: {
         "Type: Group Project",
       images: [
         {
-          src: "/real-estate-investment-analysis-1/property.png",
+          src: "/projects/real-estate-investment-analysis-1/property.png",
         },
       ],
     },
@@ -515,7 +515,7 @@ links: {
         "We also compared three properties across two dimensions: return potential and risk protection.",
       images: [
         {
-          src: "/real-estate-investment-analysis-1/compare.png",
+          src: "/projects/real-estate-investment-analysis-1/compare.png",
         },
       ],
     },
@@ -604,10 +604,10 @@ links: {
         "Current logistics platforms rely on fragmented data sources and workflow-specific analytics, which limits emergency response and long-term decision making.",
       images: [
         {
-          src: "/smart-city-logistics/1.png",
+          src: "/projects/smart-city-logistics/1.png",
         },
         {
-          src: "/smart-city-logistics/2.png",
+          src: "/projects/smart-city-logistics/2.png",
         },
       ],
     },
@@ -620,10 +620,10 @@ links: {
         "This scenario demonstrates how the platform detects widespread delays, prioritizes critical deliveries, and enables coordinated responses during large-scale disruptions.",
       images: [
         {
-          src: "/smart-city-logistics/3.png",
+          src: "/projects/smart-city-logistics/3.png",
         },
         {
-          src: "/smart-city-logistics/4.png",
+          src: "/projects/smart-city-logistics/4.png",
         },
       ],
     },
@@ -664,7 +664,7 @@ links: {
         "Warby Parker’s strengths include efficient production and logistics, a strong brand with intellectual property, and a differentiated customer experience through programs such as Home Try-On and Virtual Try-On. However, the company faces weaknesses including limited investment in advanced eyewear technology, challenges in scaling customer service as the business grows, and persistent operating losses driven by high SG&A expenses.",
       images: [
         {
-          src: "/warby-parker-strategy/SWOT.png",
+          src: "/projects/warby-parker-strategy/SWOT.png",
         },
       ],
     },
@@ -675,7 +675,7 @@ links: {
         "Warby Parker is known for its innovative sales strategies, such as the virtual try-on and home try-on programs, which distinguish it from other eyewear brands. These approaches enhance convenience and personalization for customers. While other eyewear brands often rely on traditional advertising or media-based promotion, Warby Parker has invested heavily in product design and new materials.",
       images: [
         {
-          src: "/warby-parker-strategy/distinctive.png",
+          src: "/projects/warby-parker-strategy/distinctive.png",
         },
       ],
     },
@@ -686,7 +686,7 @@ links: {
         "This Porter Five Forces analysis shows that Warby Parker operates in an environment with high rivalry among established players, strong buyer power due to many alternatives, high barriers to entry from brand loyalty and licensing, and a relatively low threat from true substitutes.",
       images: [
         {
-          src: "/warby-parker-strategy/porter5.png",
+          src: "/projects/warby-parker-strategy/porter5.png",
         },
       ],
     },
