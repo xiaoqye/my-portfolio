@@ -40,73 +40,121 @@ export const projects: Project[] = [
   summary: "Interactive dashboard analyzing EV pricing and sales.",
 
   sections: [
+  {
+    title: "Overview",
+    content:
+      "I built this dashboard to analyze the electric vehicle market across manufacturers, focusing on pricing trends, sales performance, and charging characteristics.\n\n" +
+      "Tools: Python, Tableau, Google Colab\n" +
+      "Data: Kaggle Electric Vehicle Dataset",
+    images: [
+      {
+        src: "/projects/ev-dashboard/ev_1.png",
+      },
+      {
+        src: "/projects/ev-dashboard/ev_2.png",
+      }
+    ],
+  },
+
+  {
+    title: "Here are the questions I was interested in answering:",
+    content:
+      "1. How many EV manufacturers and models are in the market?\n" +
+      "2. How has the average EV price changed over time?\n" +
+      "3. How do prices vary by manufacturer and year?\n" +
+      "4. Which factors are associated with higher EV sales?\n" +
+      "5. How do charging time and battery range influence adoption?",
+  },
+
+  {
+    title: "I took these steps to create my analysis:",
+    content:
+      "1. Cleaned and prepared EV data in Python using Google Colab\n" +
+      "2. Handled missing values and standardized key attributes\n" +
+      "3. Created calculated fields and aggregated metrics in Tableau\n" +
+      "4. Designed two interactive dashboards with consistent visual themes",
+  },
+
+  {
+    title: "Key Takeaways",
+    content:
+      "1. The average EV price across years was approximately $75,386, dropping significantly to around $62,000 in 2024 before returning closer to the average in 2025\n" +
+      "2. Most EVs have charging times between 3 and 6 hours, followed by around 9 hours\n" +
+      "3. Rivian recorded the highest overall sales volume among manufacturers\n" +
+      "4. Tesla and Porsche show more concentrated pricing ranges, while Lucid, BMW, and Mercedes Benz exhibit wider distributions",
+  }
+],
+
+links: {
+  dashboard: "https://public.tableau.com/..."
+},
+  },
+
+
+{
+  slug: "loan-default-ml",
+  title: "Loan Default Prediction",
+  section: "Analytics & Decision Support",
+  category: "Machine Learning",
+  cover: "/covers/lending.png",
+  summary:
+    "Developed machine learning models to predict loan default risk and evaluate model performance for risk assessment.",
+
+  sections: [
     {
       title: "Overview",
       content:
-        "Built an interactive Tableau dashboard to analyze EV pricing, sales performance, and charging behavior.",
+        "This project analyzes borrower and loan characteristics from the Lending Club peer-to-peer lending platform to predict loan default risk. The goal was to understand key default drivers through exploratory analysis and build predictive models to estimate default likelihood.\n\n" +
+        "Tools: Python, Google Colab\n" +
+        "Data: Lending Club Loan Dataset\n" +
+        "Type: Group Project",
       images: [
         {
-          src: "/screenshots/ev-overview.png",
-          caption: "Overview of the EV market dashboard"
-        },
-        {
-          src: "/screenshots/ev-pricing.png",
-          caption: "EV pricing and range comparison by manufacturer"
+          src: "/projects/loan-default-ml/model.png",
         }
-       ]
-      },
-    {
-      title: "Key Takeaways",
-      content:
-        "• EV prices dropped in 2024\n• Charging time impacts adoption\n• Rivian leads sales volume"
+      ]
     },
+
     {
-      title: "Key Takeaways",
+      title: "Key Questions",
       content:
-        "• EV prices dropped in 2024\n• Charging time impacts adoption\n• Rivian leads sales volume"
+        "1. Which borrower and loan factors are most associated with default?\n" +
+        "2. How do interest rate, loan term, FICO score, and DTI affect default risk?\n" +
+        "3. Which model best balances accuracy and default detection?"
+    },
+
+    {
+      title: "Approach",
+      content:
+        "• Cleaned and explored Lending Club data using Python\n" +
+        "• Selected 16 features based on exploratory data analysis\n" +
+        "• Trained Logistic Regression, SVM, Decision Tree, and Random Forest models\n" +
+        "• Compared models using Accuracy, Precision, and F1 score",
+      images: [
+        {
+          src: "/projects/loan-default-ml/eda.png",
+        }
+      ]
+    },
+
+    {
+      title: "Key Insights",
+      content:
+        "• Accuracy was similar across models at approximately 0.81, making F1 score critical for evaluation\n" +
+        "• SVM and Logistic Regression showed very low F1 scores, indicating poor detection of default cases\n" +
+        "• Random Forest performed best overall with the highest F1 score and balanced precision\n" +
+        "• Higher interest rates, lower FICO scores, and high revolving credit utilization were strongly associated with default\n" +
+        "• Borrowers with mid-range DTI (20–40%) showed higher default risk than very high DTI borrowers, revealing non-linear effects\n" +
+        "• 60-month loans consistently carried higher interest rates and higher default risk compared to 36-month loans"
     }
   ],
 
   links: {
-    dashboard: "https://public.tableau.com/..."
-  }
+    report:
+      "https://www.canva.com/design/DAG6UInwOoE/ymHDFTuXOnOfatSkU11aqg/edit?utm_content=DAG6UInwOoE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+  },
 },
 
-  {
-    slug: "loan-default-ml",
-    title: "Loan Default Prediction",
-    section: "Analytics & Decision Support",
-    category: "Machine Learning",
-    cover: "/covers/lending.png",
-    summary:
-      "Developed machine learning models to predict loan default risk and evaluate model performance for risk assessment.",
-    
-    sections: [
-      {
-      title: "bacground",
-      content:
-        "Built an interactive Tableau dashboard to analyze EV pricing, sales performance, and charging behavior.",
-      images: [
-        {
-          src: "/screenshots/ev-overview.png",
-          caption: ""
-        },
-        {
-          src: "/screenshots/ev-pricing.png",
-          caption: "EV pricing and range comparison by manufacturer"
-        }
-       ]
-      },
-      {
-        title: " ",
-        content: " "
-      }
-    ],
-
-    links: {
-      report: "https://www.canva.com/design/DAG6UInwOoE/ymHDFTuXOnOfatSkU11aqg/edit?utm_content=DAG6UInwOoE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
-    },
-  },
   {
     slug: "sql-analysis",
     title: "Bluebike Usage Analysis",
