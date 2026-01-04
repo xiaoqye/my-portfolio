@@ -38,43 +38,41 @@ export default async function ProjectPage({
       </div>
 
       {/* CONTENT SECTIONS */}
-      <div className="space-y-12">
+{project.sections && (
+  <div className="space-y-12">
+    {project.sections.map((section, idx) => (
+      <section key={idx}>
+        <h2 className="text-lg font-semibold mb-2">
+          {section.title}
+        </h2>
 
-        <section>
-          <h2 className="text-lg font-semibold mb-2">
-            Content
-          </h2>
-          <p className="whitespace-pre-line text-gray-700">
-            {project.content || ""}
-          </p>
-        </section>
+        <p className="whitespace-pre-line text-gray-700 mb-6">
+          {section.content}
+        </p>
 
-        <section>
-          <h2 className="text-lg font-semibold mb-2">
-            Here are the questions I was interested in answering:
-          </h2>
-          <p className="whitespace-pre-line text-gray-700">
-            {project.questions || ""}
-          </p>
-        </section>
+        {section.images && (
+          <div className="space-y-6">
+            {section.images.map((img, i) => (
+              <figure key={i}>
+                <img
+                  src={img.src}
+                  alt={img.caption ?? ""}
+                  className="rounded-xl"
+                />
+                {img.caption && (
+                  <figcaption className="mt-2 text-sm text-gray-500">
+                    {img.caption}
+                  </figcaption>
+                )}
+              </figure>
+            ))}
+          </div>
+        )}
+      </section>
+    ))}
+  </div>
+)}
 
-        <section>
-          <h2 className="text-lg font-semibold mb-2">
-            I took these steps to create my analysis:
-          </h2>
-          <p className="whitespace-pre-line text-gray-700">
-            {project.steps || ""}
-          </p>
-        </section>
-
-        <section>
-          <h2 className="text-lg font-semibold mb-2">
-            My key takeaways:
-          </h2>
-          <p className="whitespace-pre-line text-gray-700">
-            {project.takeaways || ""}
-          </p>
-        </section>
 
         <section>
           <h2 className="text-lg font-semibold mb-2">
@@ -111,8 +109,6 @@ export default async function ProjectPage({
             </a>
           )}
         </section>
-
-      </div>
     </main>
   );
 }
