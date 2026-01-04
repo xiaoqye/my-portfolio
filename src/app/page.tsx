@@ -88,12 +88,14 @@ export default function Home() {
                   href="https://www.linkedin.com/in/xiaoqye"
                   target="_blank"
                   rel="noreferrer"
+                  title="LinkedIn"
                   className="hover:text-gray-900"
                 >
                   <i className="ri-linkedin-line text-xl" />
                 </a>
                 <a
                   href="mailto:xye@bu.edu"
+                  title="Email"
                   className="hover:text-gray-900"
                 >
                   <i className="ri-mail-line text-xl" />
@@ -102,6 +104,7 @@ export default function Home() {
                   href="https://github.com/xiaoqye"
                   target="_blank"
                   rel="noreferrer"
+                  title="GitHub"
                   className="hover:text-gray-900"
                 >
                   <i className="ri-github-line text-xl" />
@@ -110,14 +113,13 @@ export default function Home() {
                   href="https://public.tableau.com/app/profile/quency.ye1021/vizzes"
                   target="_blank"
                   rel="noreferrer"
+                  title="Tableau"
                   className="hover:text-gray-900"
                 >
                   <i className="ri-bar-chart-line text-xl" />
                 </a>
-                <a href="#" title="Power BI" className="hover:text-gray-900">
-                  <i className="ri-dashboard-line text-xl" />
-                </a>
-                <a href="#" title="Excel" className="hover:text-gray-900">
+                <a href="https://1drv.ms/x/c/c4f892a68e984fb3/IQBVIp8SP3MnQZD8-Xxfg1yZAV02iuNgFIoqJMOG4CET700?e=tbb10p"
+                 title="Excel" className="hover:text-gray-900">
                   <i className="ri-file-excel-2-line text-xl" />
                 </a>
               </div>
