@@ -9,16 +9,23 @@ export interface Project {
   category: string;
   cover: string;
   summary: string;
-   content?: string;
-  questions?: string;
-  steps?: string;
-  takeaways?: string;
+
+  sections?: {
+    title: string;      // e.g. "Overview", "Background", "Key Insights"
+    content: string;    // the actual text (any kind)
+    images?: {
+      src: string;
+      caption?: string;
+    }[];
+  }[];
+
   links: {
     dashboard?: string;
     report?: string;
     github?: string;
   };
 }
+
 
 export const projects: Project[] = [
   // --------------------
@@ -30,23 +37,39 @@ export const projects: Project[] = [
   section: "Analytics & Decision Support",
   category: "Data Visualization",
   cover: "/covers/vehicle.png",
-  summary:
-    "Built an interactive dashboard analyzing EV pricing, sales, and charging behavior.",
-  content:
-    "I explored the electric vehicle market to understand pricing patterns, sales performance, and charging characteristics across manufacturers.",
+  summary: "Interactive dashboard analyzing EV pricing and sales.",
 
-  questions:
-    "How do EV prices vary across manufacturers?\nWhat factors are associated with higher EV sales?\nHow do charging time and battery range influence adoption?",
-
-  steps:
-    "Collected and cleaned EV sales and specification data.\nPerformed exploratory data analysis.\nBuilt an interactive Tableau dashboard.",
-
-  takeaways:
-    "Price and range strongly influence adoption.\nCharging time remains a key constraint.\nDashboards helped translate data into business insights.",
+  sections: [
+    {
+      title: "Overview",
+      content:
+        "Built an interactive Tableau dashboard to analyze EV pricing, sales performance, and charging behavior.",
+      images: [
+        {
+          src: "/screenshots/ev-overview.png",
+          caption: "Overview of the EV market dashboard"
+        },
+        {
+          src: "/screenshots/ev-pricing.png",
+          caption: "EV pricing and range comparison by manufacturer"
+        }
+       ]
+      },
+    {
+      title: "Key Takeaways",
+      content:
+        "• EV prices dropped in 2024\n• Charging time impacts adoption\n• Rivian leads sales volume"
+    },
+    {
+      title: "Key Takeaways",
+      content:
+        "• EV prices dropped in 2024\n• Charging time impacts adoption\n• Rivian leads sales volume"
+    }
+  ],
 
   links: {
     dashboard: "https://public.tableau.com/..."
-  },
+  }
 },
 
   {
@@ -57,21 +80,31 @@ export const projects: Project[] = [
     cover: "/covers/lending.png",
     summary:
       "Developed machine learning models to predict loan default risk and evaluate model performance for risk assessment.",
-    content:
-    "I explored ?.",
+    
+    sections: [
+      {
+      title: "bacground",
+      content:
+        "Built an interactive Tableau dashboard to analyze EV pricing, sales performance, and charging behavior.",
+      images: [
+        {
+          src: "/screenshots/ev-overview.png",
+          caption: ""
+        },
+        {
+          src: "/screenshots/ev-pricing.png",
+          caption: "EV pricing and range comparison by manufacturer"
+        }
+       ]
+      },
+      {
+        title: " ",
+        content: " "
+      }
+    ],
 
-  questions:
-    "How do EV prices s?\nHow do charging time and battery range influence adoption?",
-
-  steps:
-    "Collected and ta.\nPerformed exploratory data analysis.\nBuilt an interactive Tableau dashboard.",
-
-  takeaways:
-    "Price and range strey constraint.\nDashboards helped translate data into business insights.",
-
-      links: {
-      report:
-        "https://www.canva.com/design/DAG6UInwOoE/ymHDFTuXOnOfatSkU11aqg/edit?utm_content=DAG6UInwOoE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+    links: {
+      report: "https://www.canva.com/design/DAG6UInwOoE/ymHDFTuXOnOfatSkU11aqg/edit?utm_content=DAG6UInwOoE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
     },
   },
   {
@@ -82,17 +115,29 @@ export const projects: Project[] = [
     cover: "/covers/sql.png",
     summary:
       "Used SQL to analyze Bluebikes trip data, generating insights on usage patterns and operational performance.",
-     content:
-    "I explored ?.",
-
-  questions:
-    "How do EV prices s?\nHow do charging time and battery range influence adoption?",
-
-  steps:
-    "Collected and ta.\nPerformed exploratory data analysis.\nBuilt an interactive Tableau dashboard.",
-
-  takeaways:
-    "Price and range strey constraint.\nDashboards helped translate data into business insights.",
+     
+  sections: [
+     {
+      title: "bacground",
+      content:
+        "Built an interactive Tableau dashboard to analyze EV pricing, sales performance, and charging behavior.",
+      images: [
+        {
+          src: "/screenshots/ev-overview.png",
+          caption: ""
+        },
+        {
+          src: "/screenshots/ev-pricing.png",
+          caption: "EV pricing and range comparison by manufacturer"
+        }
+       ]
+      },
+    {
+      title: "Key Takeaways",
+      content:
+        "• EV prices dropped in 2024\n• Charging time impacts adoption\n• Rivian leads sales volume"
+    }
+  ],
 
       links: {
       github: "https://github.com/xiaoqye/BA775_Toolbox_Bluebikes-Analysis",
@@ -107,17 +152,29 @@ export const projects: Project[] = [
     cover: "/covers/powerbi.png",
     summary:
       "Built a Power BI dashboard to track vehicle sales performance, key financial KPIs, and trends for executive reporting.",
-     content:
-    "I explored ?.",
-
-  questions:
-    "How do EV prices s?\nHow do charging time and battery range influence adoption?",
-
-  steps:
-    "Collected and ta.\nPerformed exploratory data analysis.\nBuilt an interactive Tableau dashboard.",
-
-  takeaways:
-    "Price and range strey constraint.\nDashboards helped translate data into business insights.",
+    
+  sections: [
+     {
+      title: "bacground",
+      content:
+        "Built an interactive Tableau dashboard to analyze EV pricing, sales performance, and charging behavior.",
+      images: [
+        {
+          src: "/screenshots/ev-overview.png",
+          caption: ""
+        },
+        {
+          src: "/screenshots/ev-pricing.png",
+          caption: "EV pricing and range comparison by manufacturer"
+        }
+       ]
+      },
+    {
+      title: "Key Takeaways",
+      content:
+        "• EV prices dropped in 2024\n• Charging time impacts adoption\n• Rivian leads sales volume"
+    }
+  ],
 
       links: {},
   },
@@ -129,17 +186,29 @@ export const projects: Project[] = [
     cover: "/covers/crime.png",
     summary:
       "Analyzed the relationship between unemployment and crime trends in Los Angeles using Python to assess economic and social impact.",
-  content:
-    "I explored ?.",
-
-  questions:
-    "How do EV prices s?\nHow do charging time and battery range influence adoption?",
-
-  steps:
-    "Collected and ta.\nPerformed exploratory data analysis.\nBuilt an interactive Tableau dashboard.",
-
-  takeaways:
-    "Price and range strey constraint.\nDashboards helped translate data into business insights.",
+  
+  sections: [
+     {
+      title: "bacground",
+      content:
+        "Built an interactive Tableau dashboard to analyze EV pricing, sales performance, and charging behavior.",
+      images: [
+        {
+          src: "/screenshots/ev-overview.png",
+          caption: ""
+        },
+        {
+          src: "/screenshots/ev-pricing.png",
+          caption: "EV pricing and range comparison by manufacturer"
+        }
+       ]
+      },
+    {
+      title: "Key Takeaways",
+      content:
+        "• EV prices dropped in 2024\n• Charging time impacts adoption\n• Rivian leads sales volume"
+    }
+  ],
 
       links: {
       github: "https://github.com/xiaoqye/BA780_A06_Crime-Unemployment-Analysis",
@@ -154,17 +223,29 @@ export const projects: Project[] = [
   summary:
     "Developed a data-driven marketing analytics plan to evaluate customer behavior, channel performance, and campaign effectiveness, translating insights into actionable recommendations.",
   
-   content:
-    "I explored ?.",
-
-  questions:
-    "How do EV prices s?\nHow do charging time and battery range influence adoption?",
-
-  steps:
-    "Collected and ta.\nPerformed exploratory data analysis.\nBuilt an interactive Tableau dashboard.",
-
-  takeaways:
-    "Price and range strey constraint.\nDashboards helped translate data into business insights.",
+   
+  sections: [
+     {
+      title: "bacground",
+      content:
+        "Built an interactive Tableau dashboard to analyze EV pricing, sales performance, and charging behavior.",
+      images: [
+        {
+          src: "/screenshots/ev-overview.png",
+          caption: ""
+        },
+        {
+          src: "/screenshots/ev-pricing.png",
+          caption: "EV pricing and range comparison by manufacturer"
+        }
+       ]
+      },
+    {
+      title: "Key Takeaways",
+      content:
+        "• EV prices dropped in 2024\n• Charging time impacts adoption\n• Rivian leads sales volume"
+    }
+  ],
 
     links: {},
 },
@@ -180,19 +261,30 @@ export const projects: Project[] = [
     cover: "/covers/fr.png",
     summary:
       "Conducted comparative financial analysis of PepsiCo and Coca-Cola, focusing on profitability, liquidity, solvency, and value creation.",
-     content:
-    "I explored ?.",
+   
+  sections: [
+     {
+      title: "bacground",
+      content:
+        "Built an interactive Tableau dashboard to analyze EV pricing, sales performance, and charging behavior.",
+      images: [
+        {
+          src: "/screenshots/ev-overview.png",
+          caption: ""
+        },
+        {
+          src: "/screenshots/ev-pricing.png",
+          caption: "EV pricing and range comparison by manufacturer"
+        }
+       ]
+      },
+    {
+      title: "Key Takeaways",
+      content:
+        "• EV prices dropped in 2024\n• Charging time impacts adoption\n• Rivian leads sales volume"
+    }
+  ],
 
-  questions:
-    "How do EV prices s?\nHow do charging time and battery range influence adoption?",
-
-  steps:
-    "Collected and ta.\nPerformed exploratory data analysis.\nBuilt an interactive Tableau dashboard.",
-
-  takeaways:
-    "Price and range strey constraint.\nDashboards helped translate data into business insights.",
-
-    
       links: {
       report:
         "https://docs.google.com/presentation/d/1iXMofNZOu3AUj5AB1t2vztJJ8OCk6JCH63MsgCLz1C4/edit?usp=sharing",
@@ -206,16 +298,30 @@ export const projects: Project[] = [
   cover: "/covers/real-estate.png",
   summary:
     "Conducted financial analysis of a real estate investment, evaluating cash flows, returns, and risk factors to support investment decision-making.",
-   content:
-    "I explored ?.",
+   
+  sections: [
+     {
+      title: "bacground",
+      content:
+        "Built an interactive Tableau dashboard to analyze EV pricing, sales performance, and charging behavior.",
+      images: [
+        {
+          src: "/screenshots/ev-overview.png",
+          caption: ""
+        },
+        {
+          src: "/screenshots/ev-pricing.png",
+          caption: "EV pricing and range comparison by manufacturer"
+        }
+       ]
+      },
+    {
+      title: "Key Takeaways",
+      content:
+        "• EV prices dropped in 2024\n• Charging time impacts adoption\n• Rivian leads sales volume"
+    }
+  ],
 
-  steps:
-    "Collected and ta.\nPerformed exploratory data analysis.\nBuilt an interactive Tableau dashboard.",
-
-  takeaways:
-    "Price and range strey constraint.\nDashboards helped translate data into business insights.",
-
-  
     links: {},
 },
 
@@ -230,17 +336,29 @@ export const projects: Project[] = [
     cover: "/covers/portfolio.png",
     summary:
       "Designed and built a personal portfolio website to organize projects clearly, improve storytelling, and present work in a product format.",
-     content:
-    "I explored ?.",
-
-  questions:
-    "How do EV prices s?\nHow do charging time and battery range influence adoption?",
-
-  steps:
-    "Collected and ta.\nPerformed exploratory data analysis.\nBuilt an interactive Tableau dashboard.",
-
-  takeaways:
-    "Price and range strey constraint.\nDashboards helped translate data into business insights.",
+   
+  sections: [
+     {
+      title: "bacground",
+      content:
+        "Built an interactive Tableau dashboard to analyze EV pricing, sales performance, and charging behavior.",
+      images: [
+        {
+          src: "/screenshots/ev-overview.png",
+          caption: ""
+        },
+        {
+          src: "/screenshots/ev-pricing.png",
+          caption: "EV pricing and range comparison by manufacturer"
+        }
+       ]
+      },
+    {
+      title: "Key Takeaways",
+      content:
+        "• EV prices dropped in 2024\n• Charging time impacts adoption\n• Rivian leads sales volume"
+    }
+  ],
 
       links: {},
   },
@@ -253,18 +371,30 @@ export const projects: Project[] = [
     cover: "/covers/logistics.png",
     summary:
       "Designed a data-driven logistics platform concept integrating multi-source data to identify bottlenecks, compare scenarios, and support city-wide operational decisions.",
-    content:
-    "I explored ?.",
-
-  questions:
-    "How do EV prices s?\nHow do charging time and battery range influence adoption?",
-
-  steps:
-    "Collected and ta.\nPerformed exploratory data analysis.\nBuilt an interactive Tableau dashboard.",
-
-  takeaways:
-    "Price and range strey constraint.\nDashboards helped translate data into business insights.",
-   
+  
+  sections: [
+     {
+      title: "bacground",
+      content:
+        "Built an interactive Tableau dashboard to analyze EV pricing, sales performance, and charging behavior.",
+      images: [
+        {
+          src: "/screenshots/ev-overview.png",
+          caption: ""
+        },
+        {
+          src: "/screenshots/ev-pricing.png",
+          caption: "EV pricing and range comparison by manufacturer"
+        }
+       ]
+      },
+    {
+      title: "Key Takeaways",
+      content:
+        "• EV prices dropped in 2024\n• Charging time impacts adoption\n• Rivian leads sales volume"
+    }
+  ],
+ 
       links: {},
   },
 
@@ -282,17 +412,29 @@ export const projects: Project[] = [
     cover: "/covers/warby.png",
     summary:
       "Conducted a strategic analysis of Warby Parker’s business model, competitive positioning, and growth opportunities with actionable recommendations.",
-     content:
-    "I explored ?.",
-
-  questions:
-    "How do EV prices s?\nHow do charging time and battery range influence adoption?",
-
-  steps:
-    "Collected and ta.\nPerformed exploratory data analysis.\nBuilt an interactive Tableau dashboard.",
-
-  takeaways:
-    "Price and range strey constraint.\nDashboards helped translate data into business insights.",
+  
+  sections: [
+     {
+      title: "bacground",
+      content:
+        "Built an interactive Tableau dashboard to analyze EV pricing, sales performance, and charging behavior.",
+      images: [
+        {
+          src: "/screenshots/ev-overview.png",
+          caption: ""
+        },
+        {
+          src: "/screenshots/ev-pricing.png",
+          caption: "EV pricing and range comparison by manufacturer"
+        }
+       ]
+      },
+    {
+      title: "Key Takeaways",
+      content:
+        "• EV prices dropped in 2024\n• Charging time impacts adoption\n• Rivian leads sales volume"
+    }
+  ],
 
       links: {},
   },
@@ -304,17 +446,29 @@ export const projects: Project[] = [
   cover: "/covers/strategy.png",
   summary:
     "Analyzed cooperative relationships between firms, focusing on strategic partnerships, value creation, and competitive advantage within inter-organizational ecosystems.",
-   content:
-    "I explored ?.",
 
-  questions:
-    "How do EV prices s?\nHow do charging time and battery range influence adoption?",
-
-  steps:
-    "Collected and ta.\nPerformed exploratory data analysis.\nBuilt an interactive Tableau dashboard.",
-
-  takeaways:
-    "Price and range strey constraint.\nDashboards helped translate data into business insights.",
+  sections: [
+     {
+      title: "bacground",
+      content:
+        "Built an interactive Tableau dashboard to analyze EV pricing, sales performance, and charging behavior.",
+      images: [
+        {
+          src: "/screenshots/ev-overview.png",
+          caption: ""
+        },
+        {
+          src: "/screenshots/ev-pricing.png",
+          caption: "EV pricing and range comparison by manufacturer"
+        }
+       ]
+      },
+    {
+      title: "Key Takeaways",
+      content:
+        "• EV prices dropped in 2024\n• Charging time impacts adoption\n• Rivian leads sales volume"
+    }
+  ],
 
     links: {},
 },
@@ -326,17 +480,29 @@ export const projects: Project[] = [
     cover: "/covers/digital.png",
     summary:
       "Proposed platform-based digital solutions to improve asset renting efficiency by enhancing utilization, automation, and user experience.",
-     content:
-    "I explored ?.",
-
-  questions:
-    "How do EV prices s?\nHow do charging time and battery range influence adoption?",
-
-  steps:
-    "Collected and ta.\nPerformed exploratory data analysis.\nBuilt an interactive Tableau dashboard.",
-
-  takeaways:
-    "Price and range strey constraint.\nDashboards helped translate data into business insights.",
+  
+  sections: [
+     {
+      title: "bacground",
+      content:
+        "Built an interactive Tableau dashboard to analyze EV pricing, sales performance, and charging behavior.",
+      images: [
+        {
+          src: "/screenshots/ev-overview.png",
+          caption: ""
+        },
+        {
+          src: "/screenshots/ev-pricing.png",
+          caption: "EV pricing and range comparison by manufacturer"
+        }
+       ]
+      },
+    {
+      title: "Key Takeaways",
+      content:
+        "• EV prices dropped in 2024\n• Charging time impacts adoption\n• Rivian leads sales volume"
+    }
+  ],
 
       links: {
       report:
