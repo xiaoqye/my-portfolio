@@ -69,10 +69,10 @@ export const projects: Project[] = [
   {
     title: "I took these steps to create my analysis:",
     content:
-      "1. Cleaned and prepared EV data in Python using Google Colab\n" +
-      "2. Handled missing values and standardized key attributes\n" +
-      "3. Created calculated fields and aggregated metrics in Tableau\n" +
-      "4. Designed two interactive dashboards with consistent visual themes",
+      "• Cleaned and prepared EV data in Python using Google Colab\n" +
+      "• Handled missing values and standardized key attributes\n" +
+      "• Created calculated fields and aggregated metrics in Tableau\n" +
+      "• Designed two interactive dashboards with consistent visual themes",
   },
 
   {
@@ -720,27 +720,4 @@ links: {
   links: {},
 },
 
-
-{
-  slug: "digital-innovation-asset-renting",
-  title: "Digital Innovation for Asset Renting",
-  section: "Business Strategy & Innovation",
-  category: "Digital Innovation / Strategy",
-  cover: "/covers/digital.png",
-  summary:
-    "Proposed platform-based digital solutions to improve asset renting efficiency by enhancing utilization, automation, and user experience.",
-
-  sections: [
-    {
-      title: "Editing",
-      content: "",
-      images: [],
-    },
-  ],
-
-  links: {
-    report:
-      "https://www.canva.com/design/DAGUcQlHdzM/TIv38YpSxTqmCz8-VAutrQ/edit?utm_content=DAGUcQlHdzM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
-  },
-},
 ]
