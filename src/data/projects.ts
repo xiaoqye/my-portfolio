@@ -120,18 +120,20 @@ links: {
     },
 
     {
-      title: "Approach",
-      content:
-        "• Cleaned and explored Lending Club data using Python\n" +
-        "• Selected 16 features based on exploratory data analysis\n" +
-        "• Trained Logistic Regression, SVM, Decision Tree, and Random Forest models\n" +
-        "• Compared models using Accuracy, Precision, and F1 score",
-      images: [
-        {
-          src: "/projects/loan-default-ml/eda.png",
-        }
-      ]
-    },
+  title: "Approach",
+  content:
+    "• Cleaned and prepared LendingClub data using Python by dropping irrelevant columns, standardizing data types, and filtering records to ensure data quality and consistency.\n" +
+    "• Performed exploratory data analysis (EDA) to assess feature distributions and correlations.\n" +
+    "• Applied feature preprocessing using scikit-learn Pipelines, including imputation, scaling for numerical features, and one-hot encoding for categorical variables.\n" +
+    "• Used EDA-informed filtering and model-based techniques to select a final feature set for training.\n" +
+    "• Trained Logistic Regression, SVM, Decision Tree, and Random Forest models and evaluated performance using Accuracy, Precision, and F1-score under class imbalance conditions.",
+  images: [
+    {
+      src: "/projects/loan-default-ml/eda.png",
+    }
+  ]
+},
+
 
     {
       title: "Key Insights",
@@ -151,9 +153,10 @@ links: {
   ],
 
   links: {
-    report:
-      "https://www.canva.com/design/DAG6UInwOoE/ymHDFTuXOnOfatSkU11aqg/edit?utm_content=DAG6UInwOoE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
-  },
+  report: "https://www.canva.com/design/DAG6UInwOoE/ymHDFTuXOnOfatSkU11aqg/edit",
+  github: "https://github.com/xiaoqye/BA810_Supervised-machine-learning/tree/main",
+},
+
 },
 
  {
