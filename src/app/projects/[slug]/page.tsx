@@ -74,41 +74,48 @@ export default async function ProjectPage({
 )}
 
 
-        <section>
-          <h2 className="text-lg font-semibold mb-2">
-            Check out the project here:
-          </h2>
-          {project.links.dashboard && (
-            <a
-              href={project.links.dashboard}
-              target="_blank"
-              rel="noreferrer"
-              className="underline text-blue-600"
-            >
-              View Dashboard →
-            </a>
-          )}
-          {project.links.report && (
-            <a
-              href={project.links.report}
-              target="_blank"
-              rel="noreferrer"
-              className="underline text-green-600 ml-4"
-            >
-              View Report →
-            </a>
-          )}
-          {project.links.github && (
-            <a
-              href={project.links.github}
-              target="_blank"
-              rel="noreferrer"
-              className="underline text-gray-800 ml-4"
-            >
-              View GitHub →
-            </a>
-          )}
-        </section>
+        {(project.links.dashboard ||
+  project.links.report ||
+  project.links.github) && (
+  <section>
+    <h2 className="text-lg font-semibold mb-2">
+      Check out the project here:
+    </h2>
+
+    {project.links.dashboard && (
+      <a
+        href={project.links.dashboard}
+        target="_blank"
+        rel="noreferrer"
+        className="underline text-blue-600"
+      >
+        View Dashboard →
+      </a>
+    )}
+
+    {project.links.report && (
+      <a
+        href={project.links.report}
+        target="_blank"
+        rel="noreferrer"
+        className="underline text-green-600 ml-4"
+      >
+        View Report →
+      </a>
+    )}
+
+    {project.links.github && (
+      <a
+        href={project.links.github}
+        target="_blank"
+        rel="noreferrer"
+        className="underline text-gray-800 ml-4"
+      >
+        View GitHub →
+      </a>
+    )}
+  </section>
+)}
     </main>
   );
 }
