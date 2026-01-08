@@ -127,11 +127,7 @@ links: {
     "• Applied feature preprocessing using scikit-learn Pipelines, including imputation, scaling for numerical features, and one-hot encoding for categorical variables.\n" +
     "• Used EDA-informed filtering and model-based techniques to select a final feature set for training.\n" +
     "• Trained Logistic Regression, SVM, Decision Tree, and Random Forest models and evaluated performance using Accuracy, Precision, and F1-score under class imbalance conditions.",
-  images: [
-    {
-      src: "/projects/loan-default-ml/eda.png",
-    }
-  ]
+  
 },
 
 
