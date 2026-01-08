@@ -89,7 +89,7 @@ export default async function ProjectPage({
         rel="noreferrer"
         className="underline text-blue-600"
       >
-        View Dashboard →
+        View Dashboard
       </a>
     )}
 
@@ -100,7 +100,7 @@ export default async function ProjectPage({
         rel="noreferrer"
         className="underline text-green-600 ml-4"
       >
-        View Report →
+        View Report
       </a>
     )}
 
@@ -111,7 +111,7 @@ export default async function ProjectPage({
         rel="noreferrer"
         className="underline text-gray-800 ml-4"
       >
-        View GitHub →
+        View GitHub
       </a>
     )}
   </section>
