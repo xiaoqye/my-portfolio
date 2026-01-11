@@ -95,7 +95,7 @@ links: {
   slug: "loan-default-ml",
   title: "Loan Default Prediction",
   section: "Analytics & Decision Support",
-  category: "Machine Learning",
+  category: "Supervised Machine Learning",
   cover: "/covers/lending.png",
   summary:
     "Developed machine learning models to predict loan default risk and evaluate model performance for risk assessment.",
@@ -104,7 +104,7 @@ links: {
     {
       title: "Overview",
       content:
-        "This project analyzes borrower and loan characteristics from the Lending Club peer-to-peer lending platform to predict loan default risk. The goal was to understand key default drivers through exploratory analysis and build predictive models to estimate default likelihood.\n\n" +
+        "This project analyzes borrower and loan characteristics from the Lending Club peer-to-peer lending platform to predict loan default risk. The goal was to understand key default features through exploratory analysis and build predictive models to estimate default likelihood.\n\n" +
         "Tools: Python, Google Colab\n" +
         "Data: Lending Club Loan Dataset\n" +
         "Type: Group Project",
@@ -159,7 +159,7 @@ links: {
   slug: "sql-analysis",
   title: "Bluebike Usage Analysis",
   section: "Analytics & Decision Support",
-  category: "SQL & Looker",
+  category: "BigQuery & Looker",
   cover: "/covers/sql.png",
   summary:
     "Used SQL to analyze Bluebikes trip data, generating insights on usage patterns and operational performance.",
@@ -350,7 +350,7 @@ links: {
     {
       title: "Background and Goal",
       content:
-        "This marketing analytics plan focuses on helping a local restaurant in Spokane that has been facing profit challenges. While the restaurant already appears in search results—especially for branded searches—there are opportunities to better convert online visibility into reservations, takeout orders, and event bookings.\n\n" +
+        "We completed this plan for a local restaurant in Spokane that has been facing profit challenges. We aimed to convert online research opportunities into real business outcomes such as reservations, takeout orders, and event bookings.\n\n" +
         "Tools: Google Search Console, Google Business Profile\n" +
         "Type: Group Project",
     },
@@ -549,7 +549,7 @@ links: {
     {
       title: "Why",
       content:
-        "I treated this portfolio website as a product, not just a place to list projects. My goal was to organize my work clearly and make it easy for others to understand what I’ve done and how I think.",
+        "I treated this portfolio website as a product, not just a place to list projects. My goal was to organize my work clearly and make it easy for you to understand what I’ve done and how I think.",
     },
 
     {
@@ -592,15 +592,14 @@ links: {
   category: "Big Data Platform Design",
   cover: "/covers/logistics.png",
   summary:
-    "Designed a data-driven logistics platform concept integrating multi-source data to identify bottlenecks, compare scenarios, and support city-wide operational decisions.",
+    "I designed this data-driven logistics platform concept integrating multi-source data to identify bottlenecks, compare scenarios, and support city-wide operational decisions.",
 
   sections: [
     {
       title: "Background",
       content:
         "Most people have experienced this when ordering online. After you pay, the system tells you when the order is expected to arrive, but deliveries can still be delayed due to unexpected events such as severe weather. Today, most logistics platforms focus on tracking individual deliveries, but they are limited when city-wide disruptions occur.\n\n" +
-        "I designed this city-scale logistics platform to go beyond tracking by helping operators respond to emergencies and coordinate actions across the city. Logistics is treated as a core smart city function, showing how transportation, infrastructure, commerce, and daily life are tightly interconnected.\n\n" +
-        "Current logistics platforms rely on fragmented data sources and workflow-specific analytics, which limits emergency response and long-term decision making.",
+        "To address this gap, I designed a city-scale logistics platform that goes beyond tracking by helping operators respond to emergencies and coordinate actions across the city. In this approach, logistics is treated as a core smart city function, reflecting how transportation, infrastructure, commerce, and daily life are tightly interconnected.", 
       images: [
         {
           src: "/projects/smart-city-logistics/1.png",
@@ -696,8 +695,6 @@ links: {
       "https://1drv.ms/b/c/c4f892a68e984fb3/IQBPZqTo_bCBS6v-47IejssNAUViBrjS6ct0XR7rwzKtOGw?e=TTlUnw",
   },
 },
-
-
 
  {
   slug: "cooperative-relationships-strategy",
