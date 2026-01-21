@@ -31,6 +31,203 @@ export const projects: Project[] = [
   // --------------------
   // Analytics & Decision Support
   // --------------------
+ 
+{
+  slug: "powerbi-advertising-performance",
+  title: "Meta Advertising Performance Dashboard",
+  section: "Analytics & Decision Support",
+  category: "Power BI | Marketing Analytics",
+  cover: "/covers/powerbi.png",
+  summary:
+    "Built an interactive Power BI dashboard to analyze Meta advertising performance across the full funnel—from impressions and engagement to conversions and purchases.",
+
+  sections: [
+    {
+      title: "Overview",
+      content:
+        "This Power BI dashboard analyzes Meta advertising campaign performance using key marketing and conversion metrics, including impressions, clicks, engagements, and purchases. The goal was to understand how users move through the advertising funnel and identify where performance drops off.\n\n" +
+        "Tools: Power BI\n" +
+        "Data: Meta Advertisement Dataset",
+      images: [
+        {
+          src: "/projects/powerbi-ads/ad-performance-dashboard.jpg",
+        },
+      ],
+    },
+
+    {
+      title: "Key Questions",
+      content:
+        "1. How effective are the campaigns at each stage of the funnel—from impressions to purchases?\n" +
+        "2. What are the overall CTR, engagement rate, conversion rate, and purchase rate?\n" +
+        "3. Which age groups, genders, and countries drive the most engagement and conversions?\n" +
+        "4. When do users engage the most across hourly and weekly trends?",
+    },
+
+    {
+      title: "Approach",
+      content:
+        "• Cleaned and standardized the raw advertising dataset, including creating structured date fields (year, month, week, and hour)\n" +
+        "• Built calculated measures using DAX to compute CTR, engagement rate, conversion rate, and purchase rate\n" +
+        "• Designed a dynamic metric selector to allow users to switch between impressions, clicks, shares, engagements, and purchases\n" +
+        "• Created interactive visuals to analyze performance by age, gender, country, ad type, and time", 
+   
+        images: [
+        {
+          src: "/projects/powerbi-ads/model-view.jpg",
+        }
+      ]
+      },
+
+    {
+      title: "Key Insights",
+      content:
+        "• The campaigns generated approximately 339K impressions and 40K clicks, resulting in a very high CTR of about 11.8%, indicating strong ad creatives and targeting\n" +
+        "• Engagement rate was around 13.6%, showing that users interacted actively with the ads\n" +
+        "• Despite strong top-of-funnel performance, the purchase rate was only about 0.6%, revealing a significant drop-off between engagement and conversion\n" +
+        "• Users aged 18–30 drove the majority of shares and engagements, with female users contributing a higher share of total interactions\n" +
+        "• Hourly trends peaked in the afternoon and evening, suggesting optimal times for budget allocation", 
+    },
+
+    {
+      title: "Business Takeaways",
+      content:
+        "The analysis shows that while the ads are highly effective at generating awareness and engagement, the purchase funnel is leaking. This suggests opportunities to optimize landing pages, retarget engaged users, and refine offers. Budget reallocation toward higher-performing ad formats and peak engagement times could further improve ROI.",
+    },
+  ],
+
+  links: {
+    dashboard:
+      "https://1drv.ms/f/c/c4f892a68e984fb3/IgCSJXGA1m2VQrNmQVoIcf1fAbA3xva3z1rUKdQzj5NEzFg?e=dQ62xb",
+  },
+},
+
+{
+  slug: "marketing-analytics-plan",
+  title: "Marketing Analytics Plan",
+  section: "Analytics & Decision Support",
+  category: "Marketing Analytics",
+  cover: "/covers/marketing.png",
+  summary:
+    "Developed a marketing analytics plan to evaluate customer behavior and campaign effectiveness, translating insights into actionable recommendations.",
+
+  sections: [
+    {
+      title: "Background and Goal",
+      content:
+        "We completed this plan for a local restaurant in Spokane that has been facing profit challenges. We aimed to convert online research opportunities into real business outcomes such as reservations, takeout orders, and event bookings.\n\n" +
+        "Tools: Google Search Console, Google Business Profile\n" +
+        "Type: Group Project",
+    },
+
+    {
+      title: "Data Used",
+      content:
+        "We analyzed Google Search Console and Google Business Profile data to understand how customers discover the restaurant and what actions they take. In June, the website received approximately 15,000 impressions and 1,100 clicks, with most traffic coming from mobile devices.\n\n" +
+        "Traffic was heavily concentrated on the homepage and menu page, suggesting that visitors primarily confirm the restaurant and review the menu. Fewer users reached high-intent pages such as contact or catering, highlighting an opportunity to better guide users toward action.",
+      images: [
+        {
+          src: "/projects/marketing-analytics-plan/google.png",
+        }
+      ]
+    },
+
+    {
+      title: "Actions",
+      content:
+        "1) Help customers find the restaurant online\n" +
+        "Update menu and contact pages to clearly communicate location, offerings, and visit information so search users can find the restaurant more easily.\n\n" +
+        "2) Increase activity on Google and social platforms\n" +
+        "Post regular updates on Google and Instagram, share content on local platforms such as VisitSpokane, and launch a TikTok account to expand local awareness.\n\n" +
+        "3) Leverage events as a growth opportunity\n" +
+        "Promote small parties and events on the website to encourage group bookings and special occasions, especially during Spokane’s busy summer season.\n\n" +
+        "4) Hire a student intern\n" +
+        "Assign a Gonzaga University marketing intern to handle weekly tracking, content updates, and incremental improvements using a short checklist and clear performance metrics.",
+    },
+
+    {
+      title: "Metrics for Success",
+      content:
+        "Revenue Targets:\n" +
+        "• August goal: $120K total revenue (approximately $4K per day)\n" +
+        "  – Based on an average ticket of $86, this requires around 46 tickets per day\n" +
+        "• Fall/Winter goal: $60K–$80K in monthly revenue\n" +
+        "  – Revenue below $50K signals financial stress",
+    },
+
+    {
+      title: "Outcome and Value",
+      content:
+        "The analysis revealed that demand already existed through search and homepage visits. The primary opportunity was not increasing traffic volume, but converting existing visitors toward calls, directions, and reservations.",
+    }
+  ],
+
+  links: {},
+},
+
+
+ {
+    slug: "powerbi-vehicle-sales",
+    title: "Sales & Pricing Dashboard",
+    section: "Analytics & Decision Support",
+    category: "Power BI",
+    cover: "/covers/powerbi.png",
+    summary:
+      "Built a Power BI dashboard to track vehicle sales performance, key financial KPIs, and trends for executive reporting.",
+    
+
+  sections: [
+  {
+    title: "Overview",
+    content:
+      "I built this Power BI dashboard to analyze vehicle sales performance, pricing trends, and dealer distribution. The dashboard includes year-to-date metrics and comparisons across body style, color, and geography.\n\n" +
+      "Tools: Power BI\n" +
+      "Data: Electric Vehicle Open Dataset",
+    images: [
+      {
+        src: "/projects/powerbi-vehicle-sales/powerbi1.png",
+      },
+      {
+        src: "/projects/powerbi-vehicle-sales/powerbi2.png",
+      }
+    ]
+  },
+
+  {
+    title: "Here are the questions I was interested in answering",
+    content:
+      "1. What are total sales, average price, and vehicles sold year to date?\n" +
+      "2. How do sales trends vary by body style and color?\n" +
+      "3. How are vehicle sales distributed across dealers in the United States?"
+  },
+
+  {
+    title: "I took these steps to create my analysis",
+    content:
+      "• Standardized date fields for year, month, and day analysis\n" +
+      "• Used DAX to calculate MTD and YTD metrics, price changes, and growth rates\n" +
+      "• Designed interactive dashboards with consistent visual themes and filters"
+  },
+
+  {
+    title: "Key Takeaways",
+    content:
+      "• Year-to-date total sales reached $371.2M, with average vehicle prices around $28K, showing stable pricing despite volume growth\n" +
+      "• Sales vary week by week but follow an overall upward trend, with stronger performance in the second half of the year\n" +
+      "• SUVs and sedans contribute the largest share of total sales, while color preferences are concentrated in black and white\n" +
+      "• Higher sales volumes are clustered around major regional dealer hubs, including Austin and Janesville"
+  }
+],
+
+links: {
+  dashboard:
+    "https://1drv.ms/u/c/c4f892a68e984fb3/IQD7BjI1N40qT6WjZRZmJq5CASGooIbNUv9hCu9RnCd3NkU?e=OAkvJH",
+},
+  },
+
+ 
+
+ 
   {
   slug: "ev-dashboard",
   title: "Electric Vehicle Market Analysis",
@@ -40,6 +237,7 @@ export const projects: Project[] = [
   summary: "Interactive dashboard analyzing EV pricing and sales.",
 
   sections: [
+    
   {
     title: "Overview",
     content:
@@ -220,65 +418,7 @@ links: {
   },
 },
 
-  {
-    slug: "powerbi-vehicle-sales",
-    title: "Automotive Sales & Pricing Dashboard",
-    section: "Analytics & Decision Support",
-    category: "Power BI",
-    cover: "/covers/powerbi.png",
-    summary:
-      "Built a Power BI dashboard to track vehicle sales performance, key financial KPIs, and trends for executive reporting.",
-    
-
-  sections: [
-  {
-    title: "Overview",
-    content:
-      "I built this Power BI dashboard to analyze vehicle sales performance, pricing trends, and dealer distribution. The dashboard includes year-to-date metrics and comparisons across body style, color, and geography.\n\n" +
-      "Tools: Power BI\n" +
-      "Data: Electric Vehicle Open Dataset",
-    images: [
-      {
-        src: "/projects/powerbi-vehicle-sales/powerbi1.png",
-      },
-      {
-        src: "/projects/powerbi-vehicle-sales/powerbi2.png",
-      }
-    ]
-  },
-
-  {
-    title: "Here are the questions I was interested in answering",
-    content:
-      "1. What are total sales, average price, and vehicles sold year to date?\n" +
-      "2. How do sales trends vary by body style and color?\n" +
-      "3. How are vehicle sales distributed across dealers in the United States?"
-  },
-
-  {
-    title: "I took these steps to create my analysis",
-    content:
-      "• Standardized date fields for year, month, and day analysis\n" +
-      "• Used DAX to calculate MTD and YTD metrics, price changes, and growth rates\n" +
-      "• Designed interactive dashboards with consistent visual themes and filters"
-  },
-
-  {
-    title: "Key Takeaways",
-    content:
-      "• Year-to-date total sales reached $371.2M, with average vehicle prices around $28K, showing stable pricing despite volume growth\n" +
-      "• Sales vary week by week but follow an overall upward trend, with stronger performance in the second half of the year\n" +
-      "• SUVs and sedans contribute the largest share of total sales, while color preferences are concentrated in black and white\n" +
-      "• Higher sales volumes are clustered around major regional dealer hubs, including Austin and Janesville"
-  }
-],
-
-links: {
-  dashboard:
-    "https://1drv.ms/u/c/c4f892a68e984fb3/IQD7BjI1N40qT6WjZRZmJq5CASGooIbNUv9hCu9RnCd3NkU?e=OAkvJH",
-},
-  },
-
+  
  {
   slug: "la-crime-unemployment",
   title: "LA Crime & Unemployment Analysis",
@@ -336,69 +476,6 @@ links: {
   },
 },
 
-
-{
-  slug: "marketing-analytics-plan",
-  title: "Marketing Analytics Plan",
-  section: "Analytics & Decision Support",
-  category: "Marketing Analytics",
-  cover: "/covers/marketing.png",
-  summary:
-    "Developed a marketing analytics plan to evaluate customer behavior and campaign effectiveness, translating insights into actionable recommendations.",
-
-  sections: [
-    {
-      title: "Background and Goal",
-      content:
-        "We completed this plan for a local restaurant in Spokane that has been facing profit challenges. We aimed to convert online research opportunities into real business outcomes such as reservations, takeout orders, and event bookings.\n\n" +
-        "Tools: Google Search Console, Google Business Profile\n" +
-        "Type: Group Project",
-    },
-
-    {
-      title: "Data Used",
-      content:
-        "We analyzed Google Search Console and Google Business Profile data to understand how customers discover the restaurant and what actions they take. In June, the website received approximately 15,000 impressions and 1,100 clicks, with most traffic coming from mobile devices.\n\n" +
-        "Traffic was heavily concentrated on the homepage and menu page, suggesting that visitors primarily confirm the restaurant and review the menu. Fewer users reached high-intent pages such as contact or catering, highlighting an opportunity to better guide users toward action.",
-      images: [
-        {
-          src: "/projects/marketing-analytics-plan/google.png",
-        }
-      ]
-    },
-
-    {
-      title: "Actions",
-      content:
-        "1) Help customers find the restaurant online\n" +
-        "Update menu and contact pages to clearly communicate location, offerings, and visit information so search users can find the restaurant more easily.\n\n" +
-        "2) Increase activity on Google and social platforms\n" +
-        "Post regular updates on Google and Instagram, share content on local platforms such as VisitSpokane, and launch a TikTok account to expand local awareness.\n\n" +
-        "3) Leverage events as a growth opportunity\n" +
-        "Promote small parties and events on the website to encourage group bookings and special occasions, especially during Spokane’s busy summer season.\n\n" +
-        "4) Hire a student intern\n" +
-        "Assign a Gonzaga University marketing intern to handle weekly tracking, content updates, and incremental improvements using a short checklist and clear performance metrics.",
-    },
-
-    {
-      title: "Metrics for Success",
-      content:
-        "Revenue Targets:\n" +
-        "• August goal: $120K total revenue (approximately $4K per day)\n" +
-        "  – Based on an average ticket of $86, this requires around 46 tickets per day\n" +
-        "• Fall/Winter goal: $60K–$80K in monthly revenue\n" +
-        "  – Revenue below $50K signals financial stress",
-    },
-
-    {
-      title: "Outcome and Value",
-      content:
-        "The analysis revealed that demand already existed through search and homepage visits. The primary opportunity was not increasing traffic volume, but converting existing visitors toward calls, directions, and reservations.",
-    }
-  ],
-
-  links: {},
-},
 
 
   // --------------------
