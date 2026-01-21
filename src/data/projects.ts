@@ -50,8 +50,12 @@ export const projects: Project[] = [
         "Data: Meta Advertisement Open Dataset",
       images: [
         {
-          src: "/projects/powerbi-ads/ad-performance-dashboard.jpg",
+          src: "/projects/powerbi-ads/ad-performance-dashboard-1.jpg",
+      
         },
+        {
+           src: "/projects/powerbi-ads/ad-performance-dashboard-2.jpg",
+        }
       ],
     },
 
