@@ -102,7 +102,7 @@ export const projects: Project[] = [
 
   links: {
     dashboard:
-      "https://1drv.ms/f/c/c4f892a68e984fb3/IgCSJXGA1m2VQrNmQVoIcf1fAbA3xva3z1rUKdQzj5NEzFg?e=dQ62xb",
+      "https://1drv.ms/f/c/c4f892a68e984fb3/IgDGb2VdUpyqR7V0mtDyvEYLAft5GT84NzyBklWS5yDvTg0?e=323jSv",
   },
 },
 
@@ -225,7 +225,7 @@ export const projects: Project[] = [
 
 links: {
   dashboard:
-    "https://1drv.ms/u/c/c4f892a68e984fb3/IQD7BjI1N40qT6WjZRZmJq5CASGooIbNUv9hCu9RnCd3NkU?e=OAkvJH",
+    "https://1drv.ms/f/c/c4f892a68e984fb3/IgA1EqAUFwEGQpvaC9B_cKgxAT2-XtfMz5yfPU9yYDK1sPs?e=pS33z0",
 },
   },
 
