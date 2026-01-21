@@ -108,12 +108,12 @@ export const projects: Project[] = [
 
 {
   slug: "marketing-analytics-plan",
-  title: "Marketing Analytics Plan",
+  title: "Marketing Plan",
   section: "Analytics & Decision Support",
   category: "Marketing Analytics",
   cover: "/covers/marketing.png",
   summary:
-    "Developed a marketing analytics plan to evaluate customer behavior and campaign effectiveness, translating insights into actionable recommendations.",
+    "Developed a marketing strategy plan for local business to evaluate customer behavior and campaign effectiveness, translating insights into actionable recommendations.",
 
   sections: [
     {
