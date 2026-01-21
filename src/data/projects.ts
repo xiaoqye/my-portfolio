@@ -34,12 +34,12 @@ export const projects: Project[] = [
  
 {
   slug: "powerbi-advertising-performance",
-  title: "Meta Advertising Performance Dashboard",
+  title: "Advertising Performance Dashboard",
   section: "Analytics & Decision Support",
   category: "Power BI | Marketing Analytics",
-  cover: "/covers/powerbi.png",
+  cover: "/covers/advertisement.png",
   summary:
-    "Built an interactive Power BI dashboard to analyze Meta advertising performance across the full funnel—from impressions and engagement to conversions and purchases.",
+    "Built this interactive Power BI dashboard to analyze Meta advertising performance from impressions and engagement to conversions and purchases.",
 
   sections: [
     {
@@ -47,7 +47,7 @@ export const projects: Project[] = [
       content:
         "This Power BI dashboard analyzes Meta advertising campaign performance using key marketing and conversion metrics, including impressions, clicks, engagements, and purchases. The goal was to understand how users move through the advertising funnel and identify where performance drops off.\n\n" +
         "Tools: Power BI\n" +
-        "Data: Meta Advertisement Dataset",
+        "Data: Meta Advertisement Open Dataset",
       images: [
         {
           src: "/projects/powerbi-ads/ad-performance-dashboard.jpg",
@@ -56,7 +56,7 @@ export const projects: Project[] = [
     },
 
     {
-      title: "Key Questions",
+      title: "Here are the questions I was interested in answering",
       content:
         "1. How effective are the campaigns at each stage of the funnel—from impressions to purchases?\n" +
         "2. What are the overall CTR, engagement rate, conversion rate, and purchase rate?\n" +
@@ -92,7 +92,7 @@ export const projects: Project[] = [
     {
       title: "Business Takeaways",
       content:
-        "The analysis shows that while the ads are highly effective at generating awareness and engagement, the purchase funnel is leaking. This suggests opportunities to optimize landing pages, retarget engaged users, and refine offers. Budget reallocation toward higher-performing ad formats and peak engagement times could further improve ROI.",
+        "The analysis shows that while the ads are highly effective at generating awareness and engagement, the purchase funnel is leaking, so this suggests opportunities to optimize landing pages, retarget engaged users, and refine offers.",
     },
   ],
 
