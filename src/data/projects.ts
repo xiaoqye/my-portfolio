@@ -54,7 +54,7 @@ export const projects: Project[] = [
       
         },
         {
-           src: "/projects/powerbi-ads/ad-performance-dashboard-2.jpg",
+           src: "/projects/powerbi-ads/ad-performance-dashboard-2.png",
         }
       ],
     },
